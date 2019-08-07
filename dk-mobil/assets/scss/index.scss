@@ -1,0 +1,208 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* DK Mobil */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//
+// IMPORTS
+//
+
+// vendors
+@import "../scss/vendors/bootstrap.min.css";
+@import "../scss/vendors/bootstrap-datepicker3.standalone.css";
+
+// utility
+@import "utility/__reset";
+@import "utility/_variables";
+
+// common
+@import "common/typography";
+@import "common/forms";
+@import "common/mixins";
+@import "common/texture";
+@import "common/links";
+@import "common/tooltip";
+
+// components
+@import "components/c-buttons";
+
+// modules
+@import "modules/m-search";
+@import "modules/m-accordion";
+@import "modules/m-table";
+
+// sections
+@import "sections/s-header";
+@import "sections/s-footer";
+@import "sections/s-modal-popup";
+
+// pages
+@import "pages/p-style-guide";
+@import "pages/p-login";
+@import "pages/p-admin-dashboard";
+@import "pages/p-edit-subscription";
+@import "pages/p-single-subscription";
+
+
+.header-nav {
+	border-bottom: 6px solid $blue;
+	margin: -18px 0 74px;
+	overflow: hidden;
+	ul {
+		text-align: right;
+		display: inline-block;
+		float: right;
+	}
+	li {
+		display: inline-block;
+		float: left;
+		a {
+			text-transform: uppercase;
+			padding: 22px 80px;
+			display: inline-block;
+			color: $white;
+			background-color: $black;
+			&.active {
+				background-color: $blue;
+			}
+			&.grey-bg {
+				background-color: $grey2;
+				color: $grey4;
+			}
+			figure {
+				width: 24px;
+				display: inline-block;
+				float: left;
+				margin: -5px 2px -6px 0;
+				svg {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+.phone-data-search {
+	margin-top: 74px;
+	input[type='search'] {
+		width: 100%;
+	}
+	.brands {
+		margin: 20px 0;
+		overflow: hidden;
+		li {
+			width: 15%;
+			margin-right: 2%;
+			float: left;
+			a {
+				display: block;
+				background-color: $grey1;
+				text-align: center;
+				color: $grey4;
+				padding: 12px 0;
+				&.active {
+					background-color: $blue;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.brand-modals {
+		ul {
+			text-align: right;
+			display: inline-block;
+			float: right;
+		}
+		li {
+			display: inline-block;
+			margin-left: 15px;
+			float: left;
+			a {
+				text-transform: uppercase;
+				padding: 18px 60px;
+				display: inline-block;
+				color: $white;
+				background-color: $blue;
+			}
+		}
+	}
+}
+
+.customize-phone {
+	padding: 84px 0 0;
+	h2 {
+		font-weight: normal;
+		border-bottom: 1px solid $white;
+	}
+	h3 {
+		font-weight: normal;
+	}
+	.available-color {
+		disply: block;
+		margin: 0 0 40px;
+		li {
+			display: inline-block;
+			text-align: center;
+			margin: 0 20px 0 0;
+			.color {
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				border-radius:50%;
+				box-sizing: border-box;
+				border: 1px solid $grey1;
+				&.black {
+					background-color: $black;
+				}
+				&.white {
+					background-color: $white;
+				}
+				&.grey {
+					background-color: $grey1;
+				}
+				&.gold {
+					background-color: $gold;
+				}
+			}
+			.name {
+				display: block;
+				text-transform: uppercase;
+				color: $white;
+				padding: 8px 0 0;
+			}
+		}
+	}
+	
+	ul.storage {
+		li {
+			display: inline-block;
+			float: left;
+			 a {
+			 	display: inline-block;
+			 	padding: 15px 30px;
+			 	color: $black;
+			 	background-color: $grey3;
+			 	&:hover {
+			 		text-decoration: none;
+			 	}
+			 	&.active {
+			 		background-color: $blue;
+			 		color: $white;
+			 	}
+			 }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
